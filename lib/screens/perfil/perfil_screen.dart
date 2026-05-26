@@ -40,7 +40,7 @@ class PerfilScreen extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     radius: 40,
-                    backgroundColor: AppTheme.primary.withOpacity(0.15),
+                    backgroundColor: AppTheme.primary.withValues(alpha: 0.15),
                     child: Text(
                       user.iniciais,
                       style: const TextStyle(
@@ -73,8 +73,8 @@ class PerfilScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
                     decoration: BoxDecoration(
                       color: user.role == UserRole.funcionario
-                          ? AppTheme.secondary.withOpacity(0.12)
-                          : AppTheme.primary.withOpacity(0.1),
+                          ? AppTheme.secondary.withValues(alpha: 0.12)
+                          : AppTheme.primary.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(AppRadius.full),
                     ),
                     child: Text(
@@ -128,7 +128,7 @@ class PerfilScreen extends StatelessWidget {
             const SizedBox(height: 8),
 
             // ── Minhas denúncias ────────────────────────────────────────
-            SectionHeader(titulo: 'Minhas denúncias'),
+            const SectionHeader(titulo: 'Minhas denúncias'),
             if (minhasDenuncias.isEmpty)
               const Padding(
                 padding: EdgeInsets.all(24),
@@ -217,9 +217,9 @@ class _StatCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
-          color: cor.withOpacity(0.08),
+          color: cor.withValues(alpha: 0.08),
           borderRadius: BorderRadius.circular(AppRadius.md),
-          border: Border.all(color: cor.withOpacity(0.2)),
+          border: Border.all(color: cor.withValues(alpha: 0.2)),
         ),
         child: Column(
           children: [

@@ -136,7 +136,7 @@ class _CadastroScreenState extends State<CadastroScreen> {
               Text('Seu bairro', style: theme.textTheme.labelLarge),
               const SizedBox(height: 8),
               DropdownButtonFormField<String>(
-                value: _bairro.isEmpty ? null : _bairro,
+                initialValue: _bairro.isEmpty ? null : _bairro,
                 hint: const Text('Selecione o bairro'),
                 decoration: const InputDecoration(
                   prefixIcon: Icon(Icons.location_city_outlined),

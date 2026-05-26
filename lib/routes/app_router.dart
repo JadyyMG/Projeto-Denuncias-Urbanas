@@ -67,7 +67,7 @@ GoRouter buildRouter(BuildContext context) {
       ShellRoute(
         navigatorKey: _shellNavigatorKey,
         builder: (context, state, child) =>
-            HomeShell(child: child, location: state.matchedLocation),
+            HomeShell(location: state.matchedLocation, child: child),
         routes: [
           GoRoute(
             path: '/home',

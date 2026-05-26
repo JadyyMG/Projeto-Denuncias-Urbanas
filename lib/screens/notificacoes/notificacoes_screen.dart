@@ -4,7 +4,6 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 import '../../controllers/app_controller.dart';
-import '../../theme/app_theme.dart';
 import '../../widgets/widgets.dart';
 
 class NotificacoesScreen extends StatelessWidget {

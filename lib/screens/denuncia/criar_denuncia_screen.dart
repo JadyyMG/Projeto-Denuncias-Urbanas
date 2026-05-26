@@ -170,7 +170,7 @@ class _EtapaInfo extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          _StepHeader(
+          const _StepHeader(
             numero: '1',
             titulo: 'O que aconteceu?',
             subtitulo: 'Descreva o problema que você identificou',
@@ -203,7 +203,7 @@ class _EtapaInfo extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           DropdownButtonFormField<String>(
-            value: bairro,
+            initialValue: bairro,
             decoration: const InputDecoration(
               labelText: 'Bairro',
               prefixIcon: Icon(Icons.location_city_outlined),
@@ -281,7 +281,7 @@ class _EtapaCategoria extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          _StepHeader(
+          const _StepHeader(
             numero: '2',
             titulo: 'Categoria e visibilidade',
             subtitulo: 'Classifique o tipo de problema',
@@ -310,7 +310,7 @@ class _EtapaCategoria extends StatelessWidget {
                       horizontal: 10, vertical: 8),
                   decoration: BoxDecoration(
                     color: selecionado
-                        ? AppTheme.primary.withOpacity(0.1)
+                        ? AppTheme.primary.withValues(alpha: 0.1)
                         : AppTheme.cardBg,
                     borderRadius: BorderRadius.circular(AppRadius.sm),
                     border: Border.all(
@@ -413,7 +413,7 @@ class _VisibilidadeOption extends StatelessWidget {
       duration: const Duration(milliseconds: 150),
       decoration: BoxDecoration(
         color: selecionado
-            ? AppTheme.primary.withOpacity(0.07)
+            ? AppTheme.primary.withValues(alpha: 0.07)
             : AppTheme.cardBg,
         borderRadius: BorderRadius.circular(AppRadius.md),
         border: Border.all(
@@ -473,7 +473,7 @@ class _EtapaRevisao extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          _StepHeader(
+          const _StepHeader(
             numero: '3',
             titulo: 'Confirme sua denúncia',
             subtitulo: 'Revise antes de enviar',

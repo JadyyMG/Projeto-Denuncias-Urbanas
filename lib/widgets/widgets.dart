@@ -21,9 +21,9 @@ class StatusBadge extends StatelessWidget {
         vertical: small ? 3 : 5,
       ),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.12),
+        color: color.withValues(alpha: 0.12),
         borderRadius: BorderRadius.circular(AppRadius.full),
-        border: Border.all(color: color.withOpacity(0.3)),
+        border: Border.all(color: color.withValues(alpha: 0.3)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -203,7 +203,7 @@ class _AvatarIniciais extends StatelessWidget {
   Widget build(BuildContext context) {
     return CircleAvatar(
       radius: radius,
-      backgroundColor: AppTheme.primary.withOpacity(0.15),
+      backgroundColor: AppTheme.primary.withValues(alpha: 0.15),
       child: Text(
         _iniciais(),
         style: TextStyle(
@@ -437,7 +437,7 @@ class CategoriaChip extends StatelessWidget {
       selected: selecionado,
       onSelected: (_) => onTap(),
       label: Text('${categoria.icon} ${categoria.label}'),
-      selectedColor: AppTheme.primary.withOpacity(0.15),
+      selectedColor: AppTheme.primary.withValues(alpha: 0.15),
       checkmarkColor: AppTheme.primary,
     );
   }
@@ -545,7 +545,7 @@ class StatusFilterChip extends StatelessWidget {
       selected: isSelecionado,
       onSelected: (_) => onChanged(value),
       label: Text(label),
-      selectedColor: AppTheme.primary.withOpacity(0.15),
+      selectedColor: AppTheme.primary.withValues(alpha: 0.15),
       checkmarkColor: AppTheme.primary,
     );
   }

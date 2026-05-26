@@ -178,7 +178,7 @@ class _CardFuncionario extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: const Color(0xFFF0FDF4),
                   borderRadius: BorderRadius.circular(AppRadius.sm),
-                  border: Border.all(color: AppTheme.success.withOpacity(0.3)),
+                  border: Border.all(color: AppTheme.success.withValues(alpha: 0.3)),
                 ),
                 child: Row(
                   children: [
@@ -351,7 +351,7 @@ class _ModalAtualizarStatusState extends State<_ModalAtualizarStatus> {
                   padding: const EdgeInsets.symmetric(
                       horizontal: 14, vertical: 12),
                   decoration: BoxDecoration(
-                    color: selecionado ? cor.withOpacity(0.1) : AppTheme.cardBg,
+                    color: selecionado ? cor.withValues(alpha: 0.1) : AppTheme.cardBg,
                     borderRadius: BorderRadius.circular(AppRadius.sm),
                     border: Border.all(
                       color: selecionado ? cor : const Color(0xFFE8EDF2),

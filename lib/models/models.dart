@@ -262,8 +262,8 @@ class MockData {
     email: 'joao.silva@email.com',
     telefone: '(81) 99999-0001',
     role: UserRole.morador,
-    bairro: 'Centro',
-    cidade: 'Caruaru',
+    bairro: 'Nobre',
+    cidade: 'Paulista',
   );
 
   // Usuário funcionário (para testar tela do funcionário)
@@ -274,7 +274,7 @@ class MockData {
     telefone: '(81) 99999-0002',
     role: UserRole.funcionario,
     bairro: 'Prefeitura',
-    cidade: 'Caruaru',
+    cidade: 'Paulista',
   );
 
   static final List<DenunciaModel> denuncias = [

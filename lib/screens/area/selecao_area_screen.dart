@@ -17,19 +17,7 @@ class _SelecaoAreaScreenState extends State<SelecaoAreaScreen> {
   final Set<String> _selecionados = {'Centro'};
 
   // Mock de bairros com estatísticas
-  final List<Map<String, dynamic>> _bairros = [
-    {'nome': 'Centro', 'denuncias': 47, 'emoji': '🏙️'},
-    {'nome': 'Boa Vista', 'denuncias': 23, 'emoji': '🌳'},
-    {'nome': 'São João', 'denuncias': 31, 'emoji': '⛪'},
-    {'nome': 'Bairro Novo', 'denuncias': 18, 'emoji': '🏘️'},
-    {'nome': 'Monte Castelo', 'denuncias': 12, 'emoji': '🏔️'},
-    {'nome': 'Rendeiras', 'denuncias': 8, 'emoji': '🧵'},
-    {'nome': 'Indianópolis', 'denuncias': 15, 'emoji': '🌿'},
-    {'nome': 'Universitário', 'denuncias': 9, 'emoji': '🎓'},
-    {'nome': 'Petrópolis', 'denuncias': 21, 'emoji': '🌸'},
-    {'nome': 'Lauritzen', 'denuncias': 6, 'emoji': '🏡'},
-    {'nome': 'Divinópolis', 'denuncias': 11, 'emoji': '⭐'},
-    {'nome': 'Salgado', 'denuncias': 7, 'emoji': '🌾'},
+   
   ];
 
   void _toggleBairro(String bairro) {
@@ -154,7 +142,7 @@ class _BairroTile extends StatelessWidget {
       duration: const Duration(milliseconds: 200),
       decoration: BoxDecoration(
         color: selecionado
-            ? AppTheme.primary.withOpacity(0.1)
+            ? AppTheme.primary.withValues(alpha: 0.1)
             : AppTheme.cardBg,
         borderRadius: BorderRadius.circular(AppRadius.md),
         border: Border.all(

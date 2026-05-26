@@ -26,7 +26,7 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   final _msgCtrl = TextEditingController();
   final _scrollCtrl = ScrollController();
-  bool _enviando = false;
+  final bool _enviando = false;
 
   @override
   void dispose() {
@@ -79,7 +79,7 @@ class _ChatScreenState extends State<ChatScreen> {
               width: 34,
               height: 34,
               decoration: BoxDecoration(
-                color: AppTheme.primary.withOpacity(0.12),
+                color: AppTheme.primary.withValues(alpha: 0.12),
                 borderRadius: BorderRadius.circular(AppRadius.full),
               ),
               child: Center(
@@ -179,7 +179,7 @@ class _BolhaMensagem extends StatelessWidget {
                     height: 28,
                     margin: const EdgeInsets.only(right: 6),
                     decoration: BoxDecoration(
-                      color: AppTheme.primary.withOpacity(0.12),
+                      color: AppTheme.primary.withValues(alpha: 0.12),
                       shape: BoxShape.circle,
                     ),
                     child: Center(
@@ -215,7 +215,7 @@ class _BolhaMensagem extends StatelessWidget {
                     : Border.all(color: const Color(0xFFE8EDF2)),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.04),
+                    color: Colors.black.withValues(alpha: 0.04),
                     blurRadius: 4,
                     offset: const Offset(0, 2),
                   ),
@@ -277,7 +277,7 @@ class _CampoMensagem extends StatelessWidget {
             top: BorderSide(color: Color(0xFFEAEDF0))),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.04),
+            color: Colors.black.withValues(alpha: 0.04),
             blurRadius: 8,
             offset: const Offset(0, -2),
           ),
