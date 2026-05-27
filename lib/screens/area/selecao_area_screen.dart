@@ -17,9 +17,16 @@ class _SelecaoAreaScreenState extends State<SelecaoAreaScreen> {
   final Set<String> _selecionados = {'Centro'};
 
   // Mock de bairros com estatísticas
-   
+  final List<Map<String, Object>> _bairros = [
+    {'nome': 'Centro', 'emoji': '🏙️', 'denuncias': 95},
+    {'nome': 'Nobre', 'emoji': '🌴', 'denuncias': 80},
+    {'nome': 'Arthur Lundgren', 'emoji': '🌳', 'denuncias': 20},
+    {'nome': 'Jardim Paulista', 'emoji': '🏞️', 'denuncias': 15},
+    {'nome': 'Cidade Tabajara', 'emoji': '🌆', 'denuncias': 30},
+    {'nome': 'Janga', 'emoji': '🏘️', 'denuncias': 20},
+    {'nome': 'Pau Amarelo', 'emoji': '🏡', 'denuncias': 60},
+    {'nome': 'Maria Farinha', 'emoji': '🏚️', 'denuncias': 5},
   ];
-
   void _toggleBairro(String bairro) {
     setState(() {
       if (_selecionados.contains(bairro)) {

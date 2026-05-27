@@ -17,7 +17,7 @@ Aplicativo mobile para denúncias urbanas e comunicação entre moradores, prefe
 | 7 | Histórico de Chats | `lib/screens/chat/historico_chats_screen.dart` |
 | 8 | Notificações | `lib/screens/notificacoes/` |
 | 9 | Perfil | `lib/screens/perfil/` |
-| 10 | Painel do Funcionário | `lib/screens/funcionario/` |
+| 10 | Painel do Funcionário | `lib/screens/fun[README.md](README.md)cionario/` |
 
 ---
 
