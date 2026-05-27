@@ -74,13 +74,19 @@ lib/
 # 1. Clone ou extraia o projeto
 cd cidade_inteligente
 
-# 2. Instale as dependências
+# 2. Com o Pthon e venv na sua máquina instale o FastApi
+pip install fastapi uvicorn python-multipart
+
+# 3. Rode a Api
+uvicorn seu_modulo.main:app --reload --host 0.0.0.0 --port 8000
+
+# 4. Em outro terminal, instale as dependências
 flutter pub get
 
-# 3. Crie as pastas de assets
+# 5. Crie as pastas de assets
 mkdir -p assets/images assets/icons
 
-# 4. Rode o app
+# 6. Rode o app
 flutter run
 ```
 
